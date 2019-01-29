@@ -12,7 +12,7 @@ public class HytaleNewsBot {
         try{
             CodeCoreAPI bot = new CodeCoreAPI();
 
-            bot.getJDA().setAutoReconnect(true);
+
 
             bot.start("NewsBot", OnlineStatus.IDLE);
 

@@ -18,8 +18,8 @@ public class NewsPaperCommand implements CommandExecuter {
 
         if(memberr.hasPermission(Permission.ADMINISTRATOR)){
             if(message.getContentRaw().startsWith("!newspaper")){
-
-                TextChannel channel = guild.getTextChannelsByName("hytale-news-\uD83D\uDCEC",true).get(0);
+                System.out.println(HytaleNewsBot.channel);
+                TextChannel channel = guild.getTextChannelsByName(HytaleNewsBot.channel,true).get(0);
                 EmbedBuilder eb = new EmbedBuilder();
 
                 eb.setTitle(args[1]);

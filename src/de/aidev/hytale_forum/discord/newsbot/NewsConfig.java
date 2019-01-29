@@ -11,7 +11,7 @@ public class NewsConfig implements CommandExecuter {
     @Override
     public boolean onCommand(Guild guild, String s, String[] strings, Member member, String s1, Message message) {
         if(member.hasPermission(Permission.ADMINISTRATOR) && message.getContentRaw().startsWith("!newschannel")){
-            HytaleNewsBot.channel = message.getContentRaw().replace("!newschannel","");
+            HytaleNewsBot.channel = message.getContentRaw().replace("!newschannel ","");
             message.delete().queue();
         }
 
